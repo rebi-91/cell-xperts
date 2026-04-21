@@ -146,6 +146,9 @@
 // };
 
 // export default SignInPage;
+
+
+
 import React from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { useSession } from "../../context/SessionContext"; // Ensure this context is correctly set up
@@ -203,12 +206,13 @@ const SignInPage: React.FC = () => {
 
       // Redirect based on role
       if (
-        profileData.role === "Staff" ||
-        profileData.role === "Patient"
+        profileData.role === "admin" ||
+        profileData.role === "driver" ||
+        profileData.role === "customer"
       ) {
-        navigate("/login");
-      } else {
         navigate("/");
+      } else {
+        navigate("/sign-up");
       }
     } catch (err: any) {
       setError(err.message || "An unexpected error occurred.");
