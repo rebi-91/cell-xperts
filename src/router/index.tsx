@@ -34,6 +34,7 @@ import Animation from "../pages/admin/Animation.tsx";
 import SplineAnimation from "../pages/admin/SplineAnimation.tsx";
 import StudentFee from "../pages/admin/StudentFee.tsx";
 import DashBoard from "../pages/admin/DashBoard.tsx";
+import AccountingPage from "../pages/admin/AccountingPage.tsx";
 import GradeDashboard from "../pages/admin/GradeDashboard.tsx";
 import StaffAttendance from "../pages/admin/StaffAttendance.tsx";
 //STUDENT
@@ -191,6 +192,10 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <DashBoard />,
+      },
+      {
+        path: "/accounting",
+        element: <AccountingPage />,
       },
       {
         path: "/dashboardstore",

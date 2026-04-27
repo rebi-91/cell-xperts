@@ -4,7 +4,10 @@ import DriversPage from "./pages/DriversPage";
 import DashboardPage from "./pages/DashboardPage";
 import FleetPage from "./pages/FleetPage";
 import OrdersPage from "./pages/OrdersPage";
+// At the top with other imports:
+import DispatchBoard from "./pages/DispatchBoard";
 
+// Inside renderContent() switch:
 import supabase from "../../supabase";
 import { useSession } from "../../context/SessionContext";
 
@@ -214,6 +217,7 @@ const AppDashboard: React.FC = () => {
       case "dashboard": return <DashboardPage />;
       case "drivers":   return <DriversPage  headerSearch={headerSearch} headerLocation={headerLocation} />;
       case "orders":    return <OrdersPage   headerSearch={headerSearch} headerLocation={headerLocation} />;
+      case "dispatch": return <DispatchBoard headerSearch={headerSearch} headerLocation={headerLocation} />;
       case "fleet":     return <FleetPage    headerSearch={headerSearch} headerLocation={headerLocation} />;
       default:          return <Placeholder label={NAV_ITEMS.find(n => n.key === active)?.label ?? active} />;
     }
