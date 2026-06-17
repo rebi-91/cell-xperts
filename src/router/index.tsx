@@ -20,6 +20,7 @@ import SignInPage from "../pages/auth/SignInPage.tsx";
 import SignUpPage from "../pages/auth/SignUpPage.tsx";
 import PickSchoolPage from "../pages/auth/PickSchoolPage.tsx";
 import SetupProfilePage from "../pages/auth/SetupProfilePage.tsx";
+import InvoicePage from "../pages/admin/pages/InvoicePage.tsx";
 import ContactPage from "../pages/auth/ContactPage.tsx";
 import PrivacyPolicy from "../pages/auth/PrivacyPolicy.tsx";
 
@@ -161,6 +162,10 @@ const router = createBrowserRouter([
       {
         path: "/sign-up",
         element: <SignUpPage />,
+      },
+      {
+        path: "/invoice",
+        element: <InvoicePage />,
       },
       // {
       //   path: "/login",
