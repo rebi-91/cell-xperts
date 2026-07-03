@@ -541,7 +541,7 @@ const HomePage: React.FC = () => {
                   Orders
                 </Link> */}
 
-                <Link to="/store" className={styles.roleLink}>
+                <Link to="/" className={styles.roleLink}>
                   Store
                 </Link>
               </>
