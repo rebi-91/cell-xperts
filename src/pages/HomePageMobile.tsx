@@ -669,7 +669,7 @@ const HomePage: React.FC = () => {
                     Orders
                   </Link>
 
-                  <Link to="/store" style={linkCardStyle}>
+                  <Link to="/" style={linkCardStyle}>
                     Store
                   </Link>
                 </>
