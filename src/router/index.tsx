@@ -60,7 +60,7 @@ import TravelPage from "../pages/auth/TravelPage.tsx";
 import PaymentPage from "../pages/admin/PaymentPage.tsx"
 import PaymentCancel from "../pages/admin/PaymentCancel.tsx";
 import PaymentSuccess from "../pages/admin/PaymentSuccess.tsx";
-import PharmacyPage from "../pages/admin/PharmacyPage.tsx";
+import CellXpertsWebsite from "../pages/admin/CellXpertsWebsite.tsx";
 import Dashboardstore from "../pages/admin/DashboardStore.tsx";
 import Dashboardstore2 from "../pages/admin/DashboardStore2.tsx";
 import Dashboardstore3 from "../pages/admin/DashboardStore3.tsx";
@@ -79,7 +79,7 @@ const router = createBrowserRouter([
     children: [
       //AUTH
       {
-        path: "/",
+        path: "/login",
         element: <HomePage />,
       },
       {
@@ -116,8 +116,8 @@ const router = createBrowserRouter([
         element: <PaymentPage />,
       },
       {
-        path: "/store",
-        element: <PharmacyPage />,
+        path: "/",
+        element: <CellXpertsWebsite />,
       },
       {
         path: "/payment-success",

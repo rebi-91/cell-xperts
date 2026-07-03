@@ -529,7 +529,7 @@ const HomePage: React.FC = () => {
                 <Link to="/dashboard" className={styles.roleLink}>
                   Dashboard
                 </Link>
-                <Link to="/staffattendance" className={styles.roleLink}>
+                {/* <Link to="/staffattendance" className={styles.roleLink}>
                   Attendance
                 </Link>
 
@@ -539,7 +539,7 @@ const HomePage: React.FC = () => {
 
                 <Link to="/orders" className={styles.roleLink}>
                   Orders
-                </Link>
+                </Link> */}
 
                 <Link to="/store" className={styles.roleLink}>
                   Store

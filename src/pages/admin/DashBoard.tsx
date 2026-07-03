@@ -299,6 +299,7 @@
 // src/components/AppDashboard.tsx
 
 
+// src/components/AppDashboard.tsx
 import React, { useEffect, useMemo, useState } from "react";
 import JobsPage from "./JobsPage";
 import DashboardPage from "./pages/DashboardPage";
@@ -474,7 +475,7 @@ const AppDashboard: React.FC = () => {
           display: "flex", alignItems: "center", gap: 10, flexShrink: 0,
         }}>
           {/* Search */}
-          <div style={{ display: "flex", alignItems: "center", gap: 8, background: "#0f0f11", border: `1px solid ${BRAND.panelBorder}`, borderRadius: 7, padding: "5px 12px", flex: 1, maxWidth: 380 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, background: "#0f0f11", border: `1px solid ${BRAND.panelBorder}`, borderRadius: 7, padding: "2px 10px", height: 40, flex: 1, maxWidth: 380 }}>
             {Ico.search}
             <input
               value={headerSearch}

@@ -30,7 +30,7 @@ const T = {
 
 const STATUS_STYLE: Record<Status, { label: string; color: string; bg: string }> = {
   unassigned: { label: "Unassigned", color: "#d4d4d8", bg: "#27272a" },
-  pending:    { label: "Pending",    color: "#fdba74", bg: "#3a2a12" },
+  pending:    { label: "Pending",    color: "#fde047", bg: "#3a3212" },
   ready:      { label: "Ready",      color: "#67e8f9", bg: "#0e3a42" },
   collected:  { label: "Collected",  color: "#86efac", bg: "#123a1e" },
 };
