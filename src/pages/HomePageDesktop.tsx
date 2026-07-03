@@ -478,7 +478,7 @@ const HomePage: React.FC = () => {
             textTransform: "uppercase",
           }}
         >
-          Taz 
+          Cell Xperts 
         </div>
       </div>
 

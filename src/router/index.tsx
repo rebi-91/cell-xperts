@@ -35,6 +35,8 @@ import Animation from "../pages/admin/Animation.tsx";
 import SplineAnimation from "../pages/admin/SplineAnimation.tsx";
 import StudentFee from "../pages/admin/StudentFee.tsx";
 import DashBoard from "../pages/admin/DashBoard.tsx";
+import AppDashboard from "../pages/admin/AppDashboard.tsx";
+import ReportsPage from "../pages/admin/ReportsPage.tsx";
 import AccountingPage from "../pages/admin/AccountingPage.tsx";
 import GradeDashboard from "../pages/admin/GradeDashboard.tsx";
 import StaffAttendance from "../pages/admin/StaffAttendance.tsx";
@@ -68,6 +70,8 @@ import SpeechToText from "../pages/shop/SpeechToTex.tsx";
 import PharmacyFirst from "../pages/admin/pharmacy-first/PharmacyFirst.tsx";
 import VideoGenerator from "../pages/admin/VideoGenerator.tsx";
 import { FlowDiagram } from "../pages/admin/pharmacy-first/FlowDiagram.tsx";
+import WorkersPage from "../pages/admin/WorkersPage.tsx";
+import JobsPage from "../pages/admin/JobsPage.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -197,6 +201,22 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <DashBoard />,
+      },
+      // {
+      //   path: "/appdashboard",
+      //   element: <AppDashboard />,
+      // },
+      {
+        path: "/workerspage",
+        element: <WorkersPage />,
+      },
+      {
+        path: "/jobspage",
+        element: <JobsPage />,
+      },
+      {
+        path: "/reportspage",
+        element: <ReportsPage />,
       },
       {
         path: "/accounting",

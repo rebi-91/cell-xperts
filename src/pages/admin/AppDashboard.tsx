@@ -1,6 +1,6 @@
 // src/components/pages/DashboardPage.tsx
 import React, { useEffect, useMemo, useState } from "react";
-import supabase from "../../../supabase";
+import supabase from "../../supabase";
 
 // ─── Types ────────────────────────────────────────────────────
 type Status = "unassigned" | "pending" | "ready" | "collected";
@@ -31,8 +31,8 @@ const T = {
 const STATUS_STYLE: Record<Status, { label: string; color: string; bg: string }> = {
   unassigned: { label: "Unassigned", color: "#d4d4d8", bg: "#27272a" },
   pending:    { label: "Pending",    color: "#fdba74", bg: "#3a2a12" },
-  ready:      { label: "Ready",      color: "#67e8f9", bg: "#0e3a42" },
-  collected:  { label: "Collected",  color: "#86efac", bg: "#123a1e" },
+  ready:      { label: "Ready",      color: "#93c5fd", bg: "#12233a" },
+  collected:  { label: "Collected",  color: "#5eead4", bg: "#0f2e2b" },
 };
 
 // ─── Helpers ──────────────────────────────────────────────────
