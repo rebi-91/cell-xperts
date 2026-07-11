@@ -72,6 +72,7 @@ import VideoGenerator from "../pages/admin/VideoGenerator.tsx";
 import { FlowDiagram } from "../pages/admin/pharmacy-first/FlowDiagram.tsx";
 import WorkersPage from "../pages/admin/WorkersPage.tsx";
 import JobsPage from "../pages/admin/JobsPage.tsx";
+import TodoListPage from "../pages/admin/Todolist.tsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -116,8 +117,12 @@ const router = createBrowserRouter([
         element: <PaymentPage />,
       },
       {
-        path: "/",
+        path: "/website",
         element: <CellXpertsWebsite />,
+      },
+      {
+        path: "/",
+        element: <TodoListPage />,
       },
       {
         path: "/payment-success",
